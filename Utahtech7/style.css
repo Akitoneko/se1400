@@ -1,4 +1,4 @@
-body {
+/*
     background-color: #FFFFFF;
     color:#666666;
     font-family: Arial, Verdana, sans-serif;
@@ -106,6 +106,7 @@ nav a {
     padding: 1rem 0rem;
     display: block;
     text-align: center;
+    transition: background-color 0.5s ease-out;
 }
 * {
     box-sizing: border-box;
@@ -164,6 +165,12 @@ nav a:hover {
         height: auto;
         padding-left: 0px;
     }
+    video {
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
 }
 @media only screen and (max-width: 600px) {
     nav {
@@ -177,6 +184,12 @@ nav a:hover {
     header h1 {
         background-image: none;
         text-align: center;
+    }
+    video {
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
 }
 #alumnihero {
@@ -235,4 +248,8 @@ td {
 
 tr:nth-of-type(even) {
     background-color: #F3F3F3;
+}
+video {
+    float: right;
+    margin-left: 2em;
 }
